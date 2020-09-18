@@ -1,0 +1,174 @@
+﻿@using Shared
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <title>@ViewData["Title"] | Blog - Blog Admin Paneli</title>
+    <meta name="description" content="Updates and statistics">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    @await RenderSectionAsync("Styles", false).ConfigureAwait(false)
+    <!--begin::Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,600,700">
+    <!--end::Fonts -->
+    <!--begin::Page Vendors Styles(used by this page) -->
+    <!--end::Page Vendors Styles -->
+    <!--begin::Global Theme Styles(used by all pages) -->
+    <!--begin:: Vendor Plugins -->
+    <link href="~/lib/general/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+    <link href="~/lib/general/animate.css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="~/lib/general/toastr/build/toastr.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/lib/general/plugins/line-awesome/css/line-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="~/lib/general/plugins/flaticon/flaticon.css" rel="stylesheet" type="text/css" />
+    <link href="~/lib/general/plugins/flaticon2/flaticon.css" rel="stylesheet" type="text/css" />
+    <link href="~/lib/general/@@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/lib/general/sweetalert2/dist/sweetalert2.css" rel="stylesheet" type="text/css" />
+
+    <!--end:: Ve~/ugins -->
+    <link href="~/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="~/views/css/custom.css" rel="stylesheet" />
+
+    <!--begin:: ~/Plugins for custom pages -->
+    <link href="~/lib/custom/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <!--end:: Ve~/ugins for custom pages -->
+    <!--end::Glo~/me Styles -->
+    <!--begin::L~/kins(used by all pages) -->
+    <link href="~/css/skins/header/base/light.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/skins/header/menu/light.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/skins/brand/dark.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/skins/aside/dark.css" rel="stylesheet" type="text/css" />
+
+
+
+    <!--CUSTOM CSS -->
+    <link href="~/css/main.css" rel="stylesheet" type="text/css" />
+    @*<link href="~/css/LoadingSpinner.css" rel="stylesheet" />*@
+</head>
+<body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--fixed kt-subheader--solid kt-aside--enabled kt-aside--fixed kt-aside--minimize kt-page--loading">
+    <div id="saklama">
+        <partial name="_MobileTopnavbar" />
+
+
+        <div class="kt-grid kt-grid--hor kt-grid--root">
+            <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+
+                <partial name="_Sidenavbar" />
+
+                <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+
+                    <partial name="_Topnavbar" />
+
+
+
+                    <!--CONTENT HERE -->
+                    @RenderBody()
+
+                    <!-- end:: Content -->
+
+                </div>
+
+            </div>
+            <!-- begin::Scrolltop -->
+            <div id="kt_scrolltop" class="kt-scrolltop">
+                <i class="fa fa-arrow-up"></i>
+            </div>
+        </div>
+    </div>
+    <div id="PrintDiv"></div>
+
+    <div id="WhiteBackground"></div>
+    <div id="LoadingIcon" class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+    </div>
+
+
+    <!-- end::Scrolltop -->
+    <!-- begin::Global Config(global config for global JS sciprts) -->
+    <script>
+        var KTAppOptions = {
+            "colors": {
+                "state": {
+                    "brand": "#5d78ff",
+                    "dark": "#282a3c",
+                    "light": "#ffffff",
+                    "primary": "#5867dd",
+                    "success": "#34bfa3",
+                    "info": "#36a3f7",
+                    "warning": "#ffb822",
+                    "danger": "#fd3995"
+                },
+                "base": {
+                    "label": [
+                        "#c5cbe3",
+                        "#a1a8c3",
+                        "#3d4465",
+                        "#3e4466"
+                    ],
+                    "shape": [
+                        "#f0f3ff",
+                        "#d9dffa",
+                        "#afb4d4",
+                        "#646c9a"
+                    ]
+                }
+            }
+        };
+    </script>
+
+    <!-- end::Global Config -->
+    <!--begin::Global Theme Bundle(used by all pages) -->
+    <!--begin:: Vendor Plugins -->
+    <script src="~/lib/general/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="~/lib/general/popper.js/dist/umd/popper.js" type="text/javascript"></script>
+    <script src="~/lib/general/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="~/lib/general/js-cookie/src/js.cookie.js" type="text/javascript"></script>
+    <script src="~/lib/general/moment/min/moment.min.js" type="text/javascript"></script>
+    <script src="~/lib/general/perfect-scrollbar/dist/perfect-scrollbar.js" type="text/javascript"></script>
+    <script src="~/lib/general/sticky-js/dist/sticky.min.js" type="text/javascript"></script>
+    <script src="~/lib/general/jquery-form/dist/jquery.form.min.js" type="text/javascript"></script>
+    <script src="~/lib/general/sweetalert2/dist/sweetalert2.min.js" type="text/javascript"></script>
+    <script src="~/lib/general/js/global/integration/plugins/sweetalert2.init.js" type="text/javascript"></script>
+
+    <script src="~/lib/general/handlebars/dist/handlebars.js" type="text/javascript"></script>
+    <script src="~/lib/general/autosize/dist/autosize.js" type="text/javascript"></script>
+    @*<script src="~/lib/general/toastr/build/toastr.min.js" type="text/javascript"></script>*@
+
+    <!--end:: Ven~ugins -->
+    <script src="~/js/scripts.bundle.js" type="text/javascript"></script>
+
+
+    <!--end::Page Vendors -->
+    <!--begin::Page Scripts(used by this page) -->
+    <script src="~/views/js/logout.js"></script>
+    <script src="~/src/utils/jquery-deseriliazeObject/jquery.deserializeObject.js"></script>
+    <script src="~/src/utils/jquery-seriliazeObject/jquery.serializeObject.js"></script>
+    <script src="~/src/utils/helpers.js"></script>
+    <script src="~/src/utils/request.js"></script>
+    <script src="~/src/constants/urls.js" type="text/javascript"></script>
+    <script src="~/js/main.js"></script>
+    <script src="~/src/js/site.js"></script>
+    <script src="~/src/js/plugins.init.js"></script>
+    <script src="~/src/utils/selector.js"></script>
+    <script src="~/views/js/logout.js"></script>
+
+
+    @*<script src="~/src/utils/jquery-deseriliazeObject/jquery.deserializeObject.js"></script>
+    <script src="~/src/utils/jquery-seriliazeObject/jquery.serializeObject.js"></script>
+    <script src="~/src/utils/helpers.js"></script>
+    <script src="~/src/js/site.js"></script>
+    <script src="~/src/utils/selector.js"></script>
+    <script src="~/src/js/plugins.init.js"></script>
+    <script src="~/src/utils/request.js"></script>*@
+
+    @RenderSection("Scripts", false)
+
+
+</body>
+</html>

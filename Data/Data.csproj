@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200413212240_db_changed.cs" />
+    <Compile Remove="Migrations\20200413212240_db_changed.Designer.cs" />
+    <Compile Remove="Migrations\20200413220331_db_changed.cs" />
+    <Compile Remove="Migrations\20200413220331_db_changed.Designer.cs" />
+    <Compile Remove="Migrations\20200413220839_db_changed.cs" />
+    <Compile Remove="Migrations\20200413220839_db_changed.Designer.cs" />
+    <Compile Remove="Migrations\20200413221059_db_changed.cs" />
+    <Compile Remove="Migrations\20200413221059_db_changed.Designer.cs" />
+    <Compile Remove="Migrations\20200413221449_db_changed.cs" />
+    <Compile Remove="Migrations\20200413221449_db_changed.Designer.cs" />
+    <Compile Remove="Migrations\20200419201001_test.cs" />
+    <Compile Remove="Migrations\20200419201001_test.Designer.cs" />
+    <Compile Remove="Migrations\20200422010039_notification_settings_added.cs" />
+    <Compile Remove="Migrations\20200422010039_notification_settings_added.Designer.cs" />
+    <Compile Remove="Migrations\20200505193432_db_updated_1.cs" />
+    <Compile Remove="Migrations\20200505193432_db_updated_1.Designer.cs" />
+    <Compile Remove="Migrations\20200810123220_migf.cs" />
+    <Compile Remove="Migrations\20200810123220_migf.Designer.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.0.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+
+
+</Project>

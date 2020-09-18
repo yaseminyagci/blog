@@ -1,0 +1,18 @@
+.auth-group-portled-headl-label {
+    width: 100% !important;
+}
+
+.PlanningRoles {
+    padding-right: 40px !important;
+}
+
+.auth-section-title, .auth-section {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding-left: 0 !important;
+    border: none !important;
+}
+
+.auth-section-title h3 {
+    font-size: 1.5rem !important;
+}

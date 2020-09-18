@@ -1,0 +1,9 @@
+{
+  "EmailSettings": {
+    "MailServer": "smtp.gmail.com",
+    "MailPort": 587,
+    "SenderName": "xeyyam islamzade",
+    "Sender": "email",
+    "Password": "******"
+  }
+}

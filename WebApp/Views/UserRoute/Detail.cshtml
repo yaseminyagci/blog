@@ -1,0 +1,49 @@
+﻿@model Shared.Resources.Post.PostGetData
+@{
+    Layout = "~/Views/Shared/_GuestLayout.cshtml";
+    bool isUser = User.Identity.IsAuthenticated;
+    string disabled= "";
+    if (isUser == false)
+        disabled = "disabled";
+    }
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                @Html.Raw(Model.Content)
+            </div>
+        </div>
+    </div>
+</article>
+<div class="col-lg-8 col-md-10 mx-auto">
+    <form id="likeForm">
+        <input type="hidden" name="PostId" id="PostId" value="@Model.Id" />
+        <input type="hidden" name="Id" id="likedId" />
+
+        <button type="submit" name="Liked" id="liked" class="btn btn-default btn-sm" @disabled value="false"><i class="far fa-thumbs-up"></i> Like</button>
+        <span class="float-right text-muted" id="likeCount"></span>
+    </form>
+</div>
+<hr>
+<div class="col-lg-8 col-md-10 mx-auto">
+    <form id="form">
+        <input type="hidden" name="PostId" id="PostId" value="@Model.Id" />
+
+        <div class="form-group">
+            <h3> <label for="inputDescription">Comments</label> </h3>
+            <textarea id="inputDescription" class="form-control" name="content" rows="4"></textarea>
+        </div>
+        <button type="submit" id="commentAdd" class="btn btn-block btn-info btn-lg" @disabled >Comment</button>
+    </form>
+
+</div>
+
+
+<div class="card-footer card-comments" id="comments">
+</div>
+<script src="~/lib/general/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="~/lib/general/jquery/dist/jquery.js" type="text/javascript"></script>
+<script src="~/src/constants/urls.js" type="text/javascript"></script>
+<script src="~/views/js/detail.js"></script>

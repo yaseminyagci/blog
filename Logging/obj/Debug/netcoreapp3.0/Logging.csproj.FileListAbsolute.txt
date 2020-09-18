@@ -1,0 +1,16 @@
+C:\Users\Yasemin\Documents\Source\Repos\v-data\Logging\bin\Debug\netcoreapp3.0\Logging.deps.json
+C:\Users\Yasemin\Documents\Source\Repos\v-data\Logging\bin\Debug\netcoreapp3.0\Logging.dll
+C:\Users\Yasemin\Documents\Source\Repos\v-data\Logging\bin\Debug\netcoreapp3.0\Logging.pdb
+C:\Users\Yasemin\Documents\Source\Repos\v-data\Logging\obj\Debug\netcoreapp3.0\Logging.csprojAssemblyReference.cache
+C:\Users\Yasemin\Documents\Source\Repos\v-data\Logging\obj\Debug\netcoreapp3.0\Logging.AssemblyInfoInputs.cache
+C:\Users\Yasemin\Documents\Source\Repos\v-data\Logging\obj\Debug\netcoreapp3.0\Logging.AssemblyInfo.cs
+C:\Users\Yasemin\Documents\Source\Repos\v-data\Logging\obj\Debug\netcoreapp3.0\Logging.dll
+C:\Users\Yasemin\Documents\Source\Repos\v-data\Logging\obj\Debug\netcoreapp3.0\Logging.pdb
+C:\Users\Yasemin\source\repos\Blog\Logging\bin\Debug\netcoreapp3.0\Logging.deps.json
+C:\Users\Yasemin\source\repos\Blog\Logging\bin\Debug\netcoreapp3.0\Logging.dll
+C:\Users\Yasemin\source\repos\Blog\Logging\bin\Debug\netcoreapp3.0\Logging.pdb
+C:\Users\Yasemin\source\repos\Blog\Logging\obj\Debug\netcoreapp3.0\Logging.csprojAssemblyReference.cache
+C:\Users\Yasemin\source\repos\Blog\Logging\obj\Debug\netcoreapp3.0\Logging.AssemblyInfoInputs.cache
+C:\Users\Yasemin\source\repos\Blog\Logging\obj\Debug\netcoreapp3.0\Logging.AssemblyInfo.cs
+C:\Users\Yasemin\source\repos\Blog\Logging\obj\Debug\netcoreapp3.0\Logging.dll
+C:\Users\Yasemin\source\repos\Blog\Logging\obj\Debug\netcoreapp3.0\Logging.pdb

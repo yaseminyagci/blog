@@ -1,0 +1,16 @@
+C:\Users\Yasemin\Documents\Source\Repos\v-data\Core\bin\Debug\netcoreapp3.0\Core.deps.json
+C:\Users\Yasemin\Documents\Source\Repos\v-data\Core\bin\Debug\netcoreapp3.0\Core.dll
+C:\Users\Yasemin\Documents\Source\Repos\v-data\Core\bin\Debug\netcoreapp3.0\Core.pdb
+C:\Users\Yasemin\Documents\Source\Repos\v-data\Core\obj\Debug\netcoreapp3.0\Core.csprojAssemblyReference.cache
+C:\Users\Yasemin\Documents\Source\Repos\v-data\Core\obj\Debug\netcoreapp3.0\Core.AssemblyInfoInputs.cache
+C:\Users\Yasemin\Documents\Source\Repos\v-data\Core\obj\Debug\netcoreapp3.0\Core.AssemblyInfo.cs
+C:\Users\Yasemin\Documents\Source\Repos\v-data\Core\obj\Debug\netcoreapp3.0\Core.dll
+C:\Users\Yasemin\Documents\Source\Repos\v-data\Core\obj\Debug\netcoreapp3.0\Core.pdb
+C:\Users\Yasemin\source\repos\Blog\Core\bin\Debug\netcoreapp3.0\Core.deps.json
+C:\Users\Yasemin\source\repos\Blog\Core\bin\Debug\netcoreapp3.0\Core.dll
+C:\Users\Yasemin\source\repos\Blog\Core\bin\Debug\netcoreapp3.0\Core.pdb
+C:\Users\Yasemin\source\repos\Blog\Core\obj\Debug\netcoreapp3.0\Core.csprojAssemblyReference.cache
+C:\Users\Yasemin\source\repos\Blog\Core\obj\Debug\netcoreapp3.0\Core.AssemblyInfoInputs.cache
+C:\Users\Yasemin\source\repos\Blog\Core\obj\Debug\netcoreapp3.0\Core.AssemblyInfo.cs
+C:\Users\Yasemin\source\repos\Blog\Core\obj\Debug\netcoreapp3.0\Core.dll
+C:\Users\Yasemin\source\repos\Blog\Core\obj\Debug\netcoreapp3.0\Core.pdb
